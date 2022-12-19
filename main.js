@@ -66,6 +66,22 @@ function toUpper(words){
     return splitWords.join(' ');
 }
 
+/*Write a function that takes in a string and returns the string with
+ all vowels removed. For example, the string "Hello, World!" 
+ should be returned as "Hll, Wrd!".
+ */
+function removedVowels(text){
+    return text.replace(/[aeiou]/gi, '');
+}
+
+/*Write a function that takes in a number and returns the number rounded
+ to the nearest integer. For example, the number 4.6 should be returned as 5,
+  and the number 4.4 should be returned as 4. (check out Math methods and properties)*/
+function rounded(num){
+    return Math.round(num);
+}
+
+
 /*
 Save the hostname of the current URL as a variable (check location.hostname)  
 Alert the sentence: “Hello, your hostname is _(your variable)_ . Welcome!”
@@ -73,3 +89,5 @@ Alert the sentence: “Hello, your hostname is _(your variable)_ . Welcome!”
 function hostname(){
     alert(`Hello, your hostname is ${location.hostname}. Welcome!`)
 }
+
+
