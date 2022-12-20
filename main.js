@@ -30,9 +30,9 @@ function tellFortune(numOfChildren,partnerName,geoLocation,jobTitle){
     alert(`You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numOfChildren} kids.`);
 }
 
-// tellFortune(2,'amit','hadera','cleaner');
-// tellFortune(7,'amit','hadera','cleaner');
-// tellFortune(5,'amit','hadera','cleaner');
+tellFortune(2,'amit','hadera','cleaner');
+tellFortune(7,'amit','hadera','cleaner');
+tellFortune(5,'amit','hadera','cleaner');
 
 /*
 Write a function that takes in a 7 digits number and returns
@@ -41,10 +41,10 @@ Write a function that takes in a 7 digits number and returns
  */
 function addingCommas(num){
     if(num > 10000000 ){
-        return "to long"
+        return "too long"
     }
     else if(num < 1000000){
-        return'to short'
+        return'too short'
     }
     let lestTripleNum = num%1000;
     let middleTripleNum =Math.trunc((num/1000)%1000);
@@ -71,6 +71,9 @@ function toUpper(words){
  should be returned as "Hll, Wrd!".
  */
 function removedVowels(text){
+    if(typeof text != String){
+        return "erro"
+    }
     return text.replace(/[aeiou]/gi, '');
 }
 
@@ -89,5 +92,3 @@ Alert the sentence: “Hello, your hostname is _(your variable)_ . Welcome!”
 function hostname(){
     alert(`Hello, your hostname is ${location.hostname}. Welcome!`)
 }
-
-
